@@ -53,7 +53,8 @@
   updateInnerText("post-2", "A second one");
   console.log(`Posts: ${getPostContents()}`);
   var button = document.querySelector("#add-post-btn");
+  var input = document.querySelector("#add-post-inpt");
   button.addEventListener("click", () => {
-    addNewPost("A fourth post");
+    addNewPost(input.value);
   });
 })();
