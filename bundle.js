@@ -52,5 +52,8 @@
   updateInnerText("post-1", "A first post refreshed by JavaScript.");
   updateInnerText("post-2", "A second one");
   console.log(`Posts: ${getPostContents()}`);
-  addNewPost("A fourth post");
+  var button = document.querySelector("#add-post-btn");
+  button.addEventListener("click", () => {
+    addNewPost("A fourth post");
+  });
 })();

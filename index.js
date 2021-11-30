@@ -7,4 +7,12 @@ updateInnerText("post-2", "A second one");
 
 console.log(`Posts: ${getPostContents()}`);
 
-addNewPost("A fourth post");
+
+const button = document.querySelector("#add-post-btn")
+
+button.addEventListener("click", ()=>{
+    addNewPost("A fourth post");
+
+})
+
+
